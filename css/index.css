@@ -1,0 +1,871 @@
+/* ===========================
+   CONFIGURACIONES BASE Y RESET
+   =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f0; /* Fondo unificado sutil según la imagen */
+    color: #1a1a1a;
+}
+
+/* Contenedor principal que respeta los márgenes a los lados */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Espaciados amplios entre secciones mayores */
+section {
+    margin: 80px 0;
+}
+
+/* ===========================
+   BARRA SUPERIOR Y NAVEGACIÓN
+   =========================== */
+.header-principal {
+    background-color: #f4f4f0;
+    padding-top: 20px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #1a1a1a;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.logo .dot {
+    background-color: #ccff00; /* Verde neón unificado */
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    right: -8px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 18px; 
+    display: inline-block;
+}
+
+.nav-links li.active a {
+    color: #1a1a1a;
+    border-bottom: 3px solid #1a1a1a;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.join-btn {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.radar-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.tags-list {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.tags-list li a {
+    text-decoration: none;
+    color: #7a7a7a;
+    font-size: 12px;
+}
+
+.explore-link {
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+}
+
+/* ===========================
+   CUERPO PARTE 1 (Hero)
+   =========================== */
+.seccion-hero {
+    margin-top: 50px;
+}
+
+.cabecera-seccion {
+    margin-bottom: 40px;
+}
+
+.kicker {
+    font-size: 11px;
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.titulo-principal {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.meta-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.subtitulo {
+    font-size: 15px;
+    color: #555;
+}
+
+.edicion {
+    font-size: 11px;
+    font-weight: 700;
+    color: #7a7a7a;
+    letter-spacing: 1px;
+}
+
+.cuadricula-contenido {
+    display: flex;
+    gap: 40px;
+}
+
+.tarjeta-destacada {
+    flex: 2.2;
+    border-radius: 8px;
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    min-height: 480px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: inset 0 -220px 150px -50px rgba(0,0,0,0.85);
+    color: #ffffff;
+}
+
+.etiqueta-neon {
+    background-color: #ccff00;
+    color: #1a1a1a;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 6px 12px;
+    display: inline-block;
+    width: max-content;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.info-destacada h2 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.info-destacada p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.autor {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #c0c0c0;
+}
+
+.barra-lateral {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.kicker-lateral {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.titulo-lateral {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.lista-articulos {
+    list-style: none;
+}
+
+.lista-articulos li {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+.lista-articulos li:first-child {
+    border-top: 2px solid #ddd;
+}
+
+.numero {
+    font-size: 22px;
+    font-weight: 700;
+    color: #a0a0a0;
+}
+
+.detalles-articulo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.categoria {
+    font-size: 11px;
+    font-weight: 700;
+    color: #7a7a7a;
+    letter-spacing: 1px;
+}
+
+.detalles-articulo h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.3;
+}
+
+.meta-articulo {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
+
+/* ===========================
+   SEPARADOR GRIS
+   =========================== */
+.separador-gris {
+    border: none;
+    border-top: 1px solid #dcdcdc;
+    margin: 10px 0;
+}
+
+/* ===========================
+   CUERPO PARTE 2 (Noticias)
+   =========================== */
+.cabecera-noticias {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+.titulos-noticias h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.titulos-noticias p {
+    font-size: 14px;
+    color: #666;
+}
+
+.enlace-todas {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.filtros {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.btn-filtro {
+    background-color: transparent;
+    border: 1px solid #dcdcdc;
+    color: #555;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-filtro:hover {
+    border-color: #999;
+}
+
+.btn-filtro.activo {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-color: #1a1a1a;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    gap: 25px;
+}
+
+.tarjeta-articulo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-articulo {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.contenido-articulo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.categoria-articulo {
+    font-size: 10px;
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.titulo-articulo {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.descripcion-articulo {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+/* ===========================
+   CUERPO PARTE 3 (Franja Oscura)
+   =========================== */
+.franja-oscura {
+    background-color: #161716;
+    color: #ffffff;
+    padding: 80px 0; /* Espaciado interno generoso para full-width */
+}
+
+.cabecera-guias {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.kicker-neon {
+    color: #ccff00;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.titulo-guias-seccion {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.subtitulo-guias {
+    font-size: 15px;
+    color: #a0a0a0;
+}
+
+.enlace-explorar {
+    color: #ccff00;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: opacity 0.2s;
+}
+
+.enlace-explorar:hover {
+    opacity: 0.8;
+}
+
+.grid-tarjetas {
+    display: flex;
+    gap: 25px;
+}
+
+.tarjeta-guia {
+    flex: 1;
+    background-color: #242624;
+    border-radius: 6px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+}
+
+.categoria-guia {
+    font-size: 10px;
+    font-weight: 700;
+    color: #a0a0a0;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* CLASE RENOMBRADA PARA SOLUCIONAR EL CONFLICTO DE COLOR */
+.titulo-guia {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ffffff;
+}
+
+.pie-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #3a3c3a;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+.meta-guia {
+    font-size: 11px;
+    color: #888888;
+}
+
+.icono-flecha {
+    color: #ccff00;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===========================
+   CUERPO PARTE 4 (Comunidad)
+   =========================== */
+.cabecera-comunidad {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.titulo-comunidad {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.contenedor-columnas {
+    display: flex;
+    gap: 60px;
+}
+
+.columna-lista {
+    flex: 1.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera-lista {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.etiqueta-lista {
+    font-size: 10px;
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.lista-temas {
+    list-style: none;
+}
+
+.item-tema {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.info-tema {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 85%;
+}
+
+.categoria-tema {
+    font-size: 10px;
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.titulo-tema {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.3;
+}
+
+.meta-tema {
+    font-size: 11px;
+    color: #888;
+}
+
+.respuestas-tema {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.columna-tarjeta {
+    flex: 1;
+}
+
+.tarjeta-neon {
+    background-color: #ccff00; /* Unificado con el color neón original */
+    border-radius: 8px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.kicker-tarjeta-neon {
+    font-size: 10px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.titulo-tarjeta-comunidad {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.texto-tarjeta {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.boton-oscuro {
+    background-color: #161716;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.boton-oscuro:hover {
+    background-color: #333;
+}
+
+.icono-flecha-oscura {
+    color: #ccff00;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ===========================
+   CUERPO PARTE 5 (Footer)
+   =========================== */
+.banner-suscripcion {
+    background-color: #ebece1;
+    border-radius: 8px;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.textos-banner {
+    max-width: 50%;
+}
+
+.kicker-banner {
+    font-size: 10px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.titulo-banner {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.subtitulo-banner {
+    font-size: 14px;
+    color: #666;
+}
+
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 42%;
+}
+
+.formulario {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-correo {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.input-correo:focus {
+    border-color: #888;
+}
+
+.btn-suscribir {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-suscribir:hover {
+    background-color: #333;
+}
+
+.legales-form {
+    font-size: 10px;
+    color: #777;
+}
+
+.navegacion-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-top: 1px solid #eaeaea;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.fila-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo-y-tagline {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.logo-texto {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+.tagline {
+    font-size: 13px;
+    color: #777;
+}
+
+.enlaces-principales {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.enlaces-principales li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.fila-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 11px;
+    color: #888;
+}
+
+.enlaces-legales {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.enlaces-legales li a {
+    text-decoration: none;
+    color: #888;
+    font-size: 11px;
+}
+
+/* Adaptabilidad Básica (Media Queries) */
+@media (max-width: 900px) {
+    .cuadricula-contenido, 
+    .grid-tarjetas, 
+    .contenedor-columnas {
+        flex-direction: column;
+    }
+    .meta-cabecera, 
+    .cabecera-guias, 
+    .cabecera-comunidad {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .banner-suscripcion {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+    .textos-banner, .contenedor-formulario {
+        max-width: 100%;
+        width: 100%;
+    }
+    .fila-superior, .fila-inferior, .logo-y-tagline {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .contenedor-tarjetas {
+        flex-direction: column;
+    }
+    .filtros {
+        flex-wrap: wrap;
+    }
+}

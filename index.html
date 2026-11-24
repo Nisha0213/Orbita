@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/index.css">
+
+</head>
+<body>
+   <header class="header-principal">
+        <div class="container">
+            <!-- Barra Superior -->
+            <div class="top-nav">
+                <div class="logo">
+                    órbita<span class="dot"></span>
+                </div>
+                
+                <ul class="nav-links">
+                    <li class="active"><a href="#">Noticias</a></li>
+                    <li><a href="#">Guías</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="#">Conversación</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <!-- Icono de lupa SVG -->
+                    <button class="icon-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <a href="#" class="login-link">Entrar</a>
+                    <a href="#" class="join-btn">Únete a la comunidad</a>
+                </div>
+            </div>
+
+            <!-- Barra Inferior -->
+            <div class="bottom-nav">
+                <span class="radar-title">EN EL RADAR</span>
+                
+                <ul class="tags-list">
+                    <li><a href="#">#Gaming</a></li>
+                    <li><a href="#">#InteligenciaArtificial</a></li>
+                    <li><a href="#">#Anime</a></li>
+                    <li><a href="#">#CulturaPop</a></li>
+                    <li><a href="#">#Hardware</a></li>
+                </ul>
+                
+                <a href="#" class="explore-link">EXPLORA TU UNIVERSO ↗</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--CUERPO PARTE 1-->
+        <section class="seccion-hero container">
+            <header class="cabecera-seccion">
+                <span class="kicker">TU DOSIS DIARIA DE CULTURA GEEK</span>
+                <h1 class="titulo-principal">Lo que mueve nuestro universo.</h1>
+                <div class="meta-cabecera">
+                    <p class="subtitulo">Para quienes siempre quieren ir un nivel más allá.</p>
+                    <span class="edicion">EDICIÓN 042 / NOVIEMBRE 2026</span>
+                </div>
+            </header>
+
+            <div class="cuadricula-contenido">
+                <article class="tarjeta-destacada" style="background-image: url('imagenes/mejores-videojuegos-de-mundo-abierto.webp');">
+                    <div class="etiqueta-neon">EN PRIMERA PERSONA</div>
+                    
+                    <div class="info-destacada">
+                        <h2>El próximo mundo abierto<br>no tiene límites.</h2>
+                        <p>Los universos virtuales que están cambiando nuestra forma de jugar.</p>
+                        <span class="autor">POR LUCÍA VEGA · 8 MIN DE LECTURA</span>
+                    </div>
+                </article>
+
+                <aside class="barra-lateral">
+                    <span class="kicker-lateral">LA SELECCIÓN DE ÓRBITA</span>
+                    <h3 class="titulo-lateral">No te lo pierdas</h3>
+                    
+                    <ul class="lista-articulos">
+                        <li>
+                            <div class="numero">01</div>
+                            <div class="detalles-articulo">
+                                <span class="categoria">TECNOLOGÍA</span>
+                                <h4>La IA ya está en tu escritorio.<br>¿Y ahora qué?</h4>
+                                <span class="meta-articulo">Hace 1 h · 24 comentarios</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="numero">02</div>
+                            <div class="detalles-articulo">
+                                <span class="categoria">CINE Y SERIES</span>
+                                <h4>Más allá del multiverso:<br>las historias que sí importan</h4>
+                                <span class="meta-articulo">Hace 2 h · 18 comentarios</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="numero">03</div>
+                            <div class="detalles-articulo">
+                                <span class="categoria">VIDEOJUEGOS</span>
+                                <h4>El regreso a lo pequeño:<br>por qué amamos los indies</h4>
+                                <span class="meta-articulo">Hace 3 h · 36 comentarios</span>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SEPARADOR GRIS -->
+        <div class="container">
+            <hr class="separador-gris">
+        </div>
+
+        <!--CUERPO PARTE 2-->
+        <section class="seccion-noticias container">
+            <header class="cabecera-noticias">
+                <div class="titulos-noticias">
+                    <h2>Recién aterrizado</h2>
+                    <p>Lo último en nuestro universo. Sin ruido, sin relleno.</p>
+                </div>
+                <a href="#" class="enlace-todas">Todas las noticias ↗</a>
+            </header>
+
+            <div class="filtros">
+                <button class="btn-filtro activo">Todo</button>
+                <button class="btn-filtro">Videojuegos</button>
+                <button class="btn-filtro">Tecnología</button>
+                <button class="btn-filtro">Cine y series</button>
+                <button class="btn-filtro">Anime y manga</button>
+            </div>
+
+            <div class="contenedor-tarjetas">
+                <article class="tarjeta-articulo">
+                    <img src="imagenes/Lilvo-Handheld.webp" alt="Consola portátil sobre mesa" class="imagen-articulo">
+                    <div class="contenido-articulo">
+                        <span class="categoria-articulo">VIDEOJUEGOS</span>
+                        <h3 class="titulo-articulo">La revolución portátil cabe en tu mochila</h3>
+                        <p class="descripcion-articulo">Jugar donde quieras ya no significa renunciar a nada. Probamos la nueva era del gaming portátil.</p>
+                        <span class="meta-articulo">MATEO RUIZ · 5 MIN</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta-articulo">
+                    <img src="imagenes/paisaje SAO reddit estanteriaotaku.webp" alt="Personaje de anime mirando paisaje" class="imagen-articulo">
+                    <div class="contenido-articulo">
+                        <span class="categoria-articulo">ANIME Y MANGA</span>
+                        <h3 class="titulo-articulo">Cinco mundos de anime en los que perderte</h3>
+                        <p class="descripcion-articulo">Historias que te atrapan desde el primer episodio y se quedan contigo mucho después.</p>
+                        <span class="meta-articulo">SARA KIM · 5 MIN</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta-articulo">
+                    <img src="imagenes/TECLADO-MECANICO-CUSTOM.webp" alt="Teclado mecánico custom" class="imagen-articulo">
+                    <div class="contenido-articulo">
+                        <span class="categoria-articulo">HARDWARE</span>
+                        <h3 class="titulo-articulo">Tu próximo teclado no necesita más luces RGB</h3>
+                        <p class="descripcion-articulo">El placer de construir algo propio, una tecla a la vez. Bienvenido al mundo custom.</p>
+                        <span class="meta-articulo">DANI TORRES · 7 MIN</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--CUERPO PARTE 3 (Franja Oscura Full Width)-->
+        <section class="franja-oscura">
+            <div class="container">
+                <header class="cabecera-guias">
+                    <div class="textos-cabecera">
+                        <span class="kicker-neon">EL CONOCIMIENTO ES TU MEJOR POWER-UP</span>
+                        <h2 class="titulo-guias-seccion">Sube de nivel.</h2>
+                        <p class="subtitulo-guias">Guías útiles para hacer más con lo que te apasiona.</p>
+                    </div>
+                    <a href="#" class="enlace-explorar">Explorar todas las guías ↗</a>
+                </header>
+
+                <div class="grid-tarjetas">
+                    <article class="tarjeta-guia">
+                        <div class="contenido-guia">
+                            <span class="categoria-guia">HARDWARE · NIVEL INICIAL</span>
+                            <h3 class="titulo-guia">Monta tu primer PC.<br>Sin miedo, sin piezas de más.</h3>
+                        </div>
+                        <div class="pie-tarjeta">
+                            <span class="meta-guia">12 min de lectura · Paso a paso</span>
+                            <span class="icono-flecha">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-guia">
+                        <div class="contenido-guia">
+                            <span class="categoria-guia">GAMING · NIVEL INTERMEDIO</span>
+                            <h3 class="titulo-guia">Más FPS, menos excusas.<br>Optimiza tu setup.</h3>
+                        </div>
+                        <div class="pie-tarjeta">
+                            <span class="meta-guia">8 min de lectura · 7 ajustes clave</span>
+                            <span class="icono-flecha">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-guia">
+                        <div class="contenido-guia">
+                            <span class="categoria-guia">CULTURA DIGITAL · NIVEL INICIAL</span>
+                            <h3 class="titulo-guia">Tu kit de supervivencia<br>para la vida digital.</h3>
+                        </div>
+                        <div class="pie-tarjeta">
+                            <span class="meta-guia">10 min de lectura · Guía esencial</span>
+                            <span class="icono-flecha">↗</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--CUERPO PARTE 4-->
+        <section class="seccion-comunidad container">
+            <header class="cabecera-comunidad">
+                <div class="textos-cabecera">
+                    <h2 class="titulo-comunidad">Tu gente está aquí.</h2>
+                    <p class="subtitulo">Teorías improbables. Recomendaciones de verdad. Conversaciones que enganchan.</p>
+                </div>
+                <a href="#" class="enlace-entrar">Entrar a la comunidad ↗</a>
+            </header>
+
+            <div class="contenedor-columnas">
+                <div class="columna-lista">
+                    <div class="cabecera-lista">
+                        <span class="etiqueta-lista">SE ESTÁ HABLANDO DE...</span>
+                        <span class="etiqueta-lista">RESPUESTAS</span>
+                    </div>
+                    
+                    <ul class="lista-temas">
+                        <li class="item-tema">
+                            <div class="info-tema">
+                                <span class="categoria-tema">GAMING</span>
+                                <h3 class="titulo-tema">¿Qué juego te hizo volver a sentir como la primera vez?</h3>
+                                <span class="meta-tema">PixelNauta · hace 12 min</span>
+                            </div>
+                            <div class="respuestas-tema">128 ↗</div>
+                        </li>
+
+                        <li class="item-tema">
+                            <div class="info-tema">
+                                <span class="categoria-tema">CINE Y SERIES</span>
+                                <h3 class="titulo-tema">Una película de ciencia ficción que nadie recomienda</h3>
+                                <span class="meta-tema">Androide_42 · hace 28 min</span>
+                            </div>
+                            <div class="respuestas-tema">86 ↗</div>
+                        </li>
+
+                        <li class="item-tema">
+                            <div class="info-tema">
+                                <span class="categoria-tema">TU SETUP</span>
+                                <h3 class="titulo-tema">Enseña tu rincón geek. Sí, el desorden también cuenta.</h3>
+                                <span class="meta-tema">NekoBytes · hace 45 min</span>
+                            </div>
+                            <div class="respuestas-tema">64 ↗</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <aside class="columna-tarjeta">
+                    <div class="tarjeta-neon">
+                        <span class="kicker-tarjeta-neon">MODO MULTIJUGADOR: ON</span>
+                        <h3 class="titulo-tarjeta-comunidad">Ser geek es mejor<br>en compañía.</h3>
+                        <p class="texto-tarjeta">Encuentra tu próxima obsesión entre personas que hablan tu mismo idioma.</p>
+                        
+                        <a href="#" class="boton-oscuro">
+                            Encuentra tu comunidad
+                            <span class="icono-flecha-oscura">↗</span>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!--CUERPO PARTE 5 (Footer)-->
+    <footer class="pie-pagina container">
+        <section class="banner-suscripcion">
+            <div class="textos-banner">
+                <span class="kicker-banner">LA SEÑAL DE ÓRBITA</span>
+                <h2 class="titulo-banner">Menos scroll. Más universo.</h2>
+                <p class="subtitulo-banner">Lo mejor de la semana, directo a tu bandeja. Los viernes, sin spam.</p>
+            </div>
+            
+            <div class="contenedor-formulario">
+                <form action="#" class="formulario">
+                    <input type="email" placeholder="Tu correo electrónico" class="input-correo" required>
+                    <button type="submit" class="btn-suscribir">Me apunto ↗</button>
+                </form>
+                <p class="legales-form">Al suscribirte, aceptas nuestra política de privacidad.</p>
+            </div>
+        </section>
+
+        <section class="navegacion-footer">
+            <div class="fila-superior">
+                <div class="logo-y-tagline">
+                    <div class="logo-texto">órbita</div>
+                    <span class="tagline">Un punto de encuentro para mentes curiosas.</span>
+                </div>
+                
+                <ul class="enlaces-principales">
+                    <li><a href="#">Sobre Órbita</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">Instagram ↗</a></li>
+                </ul>
+            </div>
+            
+            <div class="fila-inferior">
+                <span class="copyright">© 2026 Órbita. Hecho en este universo.</span>
+                
+                <ul class="enlaces-legales">
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Términos</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
